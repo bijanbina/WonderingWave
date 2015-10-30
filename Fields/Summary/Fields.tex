@@ -1,0 +1,30 @@
+\documentclass{article}
+\input{Design/packages}
+\input{Design/element4}
+\input{Design/design}
+\input{Design/header}
+\usepackage{amsmath}%
+\usepackage{amssymb}
+\usepackage{lipsum}  
+\usetikzlibrary{intersections}
+
+\DeclareMathSizes{10}{10}{6}{6}
+\begin{document}
+
+\pagecolor{backGray}\afterpage{\pagecolor{backCirc}}
+\maketitle
+
+
+\newcommand{\TonDdef}[1]{
+\pdfbookmark[0]{#1}{#1}
+\renewcommand{\Places}{#1} % Teacher/lecturer
+}
+
+\newcommand{\myfrac}[3][3pt]{\frac{\raisebox{10pt}{#2}}{\raisebox{-10pt}{#3}}};
+
+\newpage
+\TonDdef{Wave Equations} % Teacher/lecturer
+\section{$\blacksquare $ Wave Equations}
+\input{Formulas/Waves}
+
+\end{document}
