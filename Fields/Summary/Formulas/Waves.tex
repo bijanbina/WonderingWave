@@ -1,20 +1,29 @@
 %\thefontsize 
-$$ g_m = \cfrac{\partial I_c}{\partial V_{BE}} = \cfrac{I_c}{V_t} ~~,~~ r_\pi = \cfrac{\beta}{g_m} ~~ , ~~ I_C = I_S ( exp (\dfrac{V_{BE}}{V_T}) + 1)~~ , ~~ h_{oe} = output~admittance ~~ , ~~ h_{fe} = \beta $$
-$$AC~Line~Slope:  -g_m ( R_C || R_L )  ~~ , ~~ DC~Load~Line :  V_{CC} - R_C I_{CQ} - V_{CEQ} = 0 $$
-$$ A_V = -\dfrac{R_C || R_L}{g_m^{-1} + R_E} ~~ , ~~ r_o = \frac{1}{h_{oe}} = \frac{V_A}{I_C} ~~ , ~~ {\Delta}_1 = V_{CEQ} - V_{sat} ~~ , ~~ I_{CQ} - \frac{{\Delta}_2}{R_{ac}} = 0 $$
+Constants:
+$$ {\epsilon}_c = {\epsilon}^{\prime} - j {\epsilon}^{\prime\prime}  ~~ , ~~ j \omega {\epsilon}_c = \sigma + j \omega \epsilon ~ \rightarrow ~  {\epsilon}^\prime = {\epsilon} ~~ , ~~ {\epsilon}^{\prime\prime} = \frac{\sigma}{\omega ~~ , ~~ v_p = \frac{\omega}{k} ~~ , ~~ k = j \omega \sqrt{\mu \epsilon}  ~~ , ~~ }$$
+$$\\ v_p = \frac{\omega}{k} ~~ , ~~ k = j \omega \sqrt{\mu \epsilon}  ~~ , ~~ \eta = \frac{j \omega \mu}{\gamma} = \frac{j \omega \mu}{\sqrt{j \omega \mu (\sigma + j \omega \epsilon)}} = \sqrt{\frac{j \omega \mu}{\sigma + j \omega \epsilon}} \approx $$
+\par
+Wave (Helmholtz) Equation:
+$$Lossless:~ \nabla^2 E - k^2 E = 0 ~~ , ~~ Lossy ~ : ~ \nabla^2 E - {\gamma}^2 E = 0 ~~ , ~~ \gamma = \alpha + j\beta~ \text{\scriptsize(only~in~TEM)}  $$
+\par
+Propagation Modes: 
+$$TEM:~ E_z = H_z = 0 ~~ , ~~ TE:~ E_z = 0 ~~ H_z \neq 0 ~~ , ~~ TM:~ E_z \neq 0 ~~ H_z = 0 $$
+\par
+Attenuations: 
+$$ \alpha = {\alpha}_d + {\alpha}_c ~~ , ~~ {\alpha}_d ~: ~ dielectric~loss ~~ , ~~ {\alpha}_c ~ : ~ conductor~loss  ~~ , ~~ \delta = \sqrt{\frac{1}{\omega \mu \sigma}} $$
 \setlength{\parindent}{0.5cm} % Default is 15pt.
 \par
-\lipsum[1]
+Wave number or k is defined as $ k = j \omega \sqrt{\mu \epsilon} $. This definition inspired from Wave Equation in a lossless equation. So for Lossy media it changed to \it{Complex Propagation Constant} or $\gamma$.  The Complex Propagation Constant is splitted into real and imaginary part which the former called attenuation constant or $\alpha$ and the latter is phase constant or $\beta$. note that this definition only apply to TEM mode. Thus in solution to TE and TM Mode, The $\beta$ used to show that the media is lossless but it may or may not be complex.
+\par
+$\delta$ is an approximation to power loss due to imperfect conductance ($\sigma<<\infty$).
 \par
 \setlength{\parindent}{0.0cm} % Default is 15pt.
-\begin{minipage}[b]{.5\textwidth}
+\begin{minipage}[b]{.49\textwidth}
 \lipsum[1-2]
 \end{minipage}%
-\noindent
-\setlength{\parindent}{0.0cm} 
-\hspace*{-\parindent}%
-\begin{minipage}[b]{.5\textwidth}
-\raggedleft
+\hspace{.02\textwidth}
+\begin{minipage}[b]{.49\textwidth}
+%\raggedleft
 \lipsum[1-2]
 %\makesectionhead{Mosfet}{Common source}
 \end{minipage}%
