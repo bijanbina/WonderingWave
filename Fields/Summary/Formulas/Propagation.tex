@@ -1,0 +1,31 @@
+%\thefontsize 
+Lossless Dielectrics:
+$$ \sigma = 0 ~~ , ~~ \gamma = j \omega \sqrt{\mu \epsilon} ~~ , ~~ \eta = \frac{j \omega \mu}{\gamma} = \sqrt{\frac{\mu}{\epsilon}} $$
+\par
+Good Conductors:
+$$ \omega \epsilon \ll \sigma ~~ , ~~ \gamma = \sqrt{j \omega \mu \sigma } =\frac{1+j}{\sqrt{2}} \sqrt{\omega \mu \sigma}~~ , ~~ \eta = \frac{j \omega \mu}{\gamma} ~~ , ~~ \alpha = \beta = \frac{1}{\delta}$$
+\par
+Low Loss Dielectrics: 
+$$ \sigma \ll \omega \epsilon ~~ , ~~ \gamma = j \omega \sqrt{\mu \epsilon}~\sqrt{1+\frac{\sigma}{j \omega \mu}} = j \omega \sqrt{\mu \epsilon}~\Big(1 - \frac{\sigma}{2 j \omega \mu} + (\frac{\sigma}{j \omega \mu})^2\Big)~~ , ~~ \eta = \frac{j \omega \mu}{\gamma} $$
+\par
+Lossy Dielectrics: 
+$$  \gamma = \sqrt{j \omega \mu (\sigma + j \omega \epsilon)}~~ , ~~ \eta = \frac{j \omega \mu}{\gamma} = \frac{j \omega \mu}{\sqrt{j \omega \mu (\sigma + j \omega \epsilon)}} = \sqrt{\frac{j \omega \mu}{\sigma + j \omega \epsilon}} $$
+\setlength{\parindent}{0.0cm} % Default is 15pt.
+\par
+\begin{itemize}
+\item[--] $\sqrt{j} = (1+j)/\sqrt{2}$
+\item[--] Taylor series of $\sqrt{1-x}$ in x = 0
+$$ \sqrt{1-x} = 1 - \frac{x}{2} + \frac{x^2}{8} $$
+\end{itemize}
+\par
+$\delta$ is an approximation to power loss due to imperfect conductance ($\sigma<<\infty$).
+\par
+\begin{minipage}[b]{.49\textwidth}
+\lipsum[1-2]
+\end{minipage}%
+\hspace{.02\textwidth}
+\begin{minipage}[b]{.49\textwidth}
+%\raggedleft
+\lipsum[1-2]
+%\makesectionhead{Mosfet}{Common source}
+\end{minipage}%
