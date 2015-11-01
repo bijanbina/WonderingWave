@@ -3,17 +3,24 @@ Constants:
 $$ {\epsilon}_c = {\epsilon}^{\prime} - j {\epsilon}^{\prime\prime}  ~~ , ~~ j \omega {\epsilon}_c = \sigma + j \omega \epsilon ~ \rightarrow ~  {\epsilon}^\prime = {\epsilon} ~~ , ~~ {\epsilon}^{\prime\prime} = \frac{\sigma}{\omega}  ~~ , ~~ v_p = \frac{\omega}{k} ~~ , ~~ k = j \omega \sqrt{\mu \epsilon} ~~ , ~~  \eta = \frac{j \omega \mu}{\gamma} $$
 \par
 Wave (Helmholtz) Equation:
-$$Lossless:~ \nabla^2 E - k^2 E = 0 ~~ , ~~ Lossy ~ : ~ \nabla^2 E - {\gamma}^2 E = 0 ~~ , ~~ \gamma = \alpha + j\beta~ \text{\scriptsize(only~in~TEM)}  $$
+$$Lossless:~ \nabla^2 \vec{E} - k^2 \vec{E} = 0 ~~ , ~~ Lossy ~ : ~ \nabla^2 \vec{E} - {\gamma}^2 \vec{E} = 0 ~~ , ~~ \gamma = \alpha + j\beta~ \text{\scriptsize(only~in~TEM)}  $$
 \par
 Propagation Modes: 
 $$TEM:~ E_z = H_z = 0 ~~ , ~~ TE:~ E_z = 0 ~~ H_z \neq 0 ~~ , ~~ TM:~ E_z \neq 0 ~~ H_z = 0 $$
 \par
 Attenuations: 
 $$ \alpha = {\alpha}_d + {\alpha}_c ~~ , ~~ {\alpha}_d ~: ~ dielectric~loss ~~ , ~~ {\alpha}_c ~ : ~ conductor~loss  ~~ , ~~ \delta = \sqrt{\frac{2}{\omega \mu \sigma}} $$
+Energy
+$$ \vec{S} = \vec{E} \times  \vec{H}^*~\text{\scriptsize(Poynting~Verctor)} ~~ , ~~ p = \vec{S} \cdot \hat{n} ~~ , ~~ P_{avg} = \frac{1}{2} \text{Re} \int{ \vec{S} \cdot d\vec{s}}$$
 \setlength{\parindent}{0.5cm} % Default is 15pt.
 \par
-Wave number or k is defined as $ k = j \omega \sqrt{\mu \epsilon} $. This definition inspired from Wave Equation in a lossless equation. So for Lossy media it changed to \it{Complex Propagation Constant} or $\gamma$.  The Complex Propagation Constant is splitted into real and imaginary part which the former called attenuation constant or $\alpha$ and the latter is phase constant or $\beta$. note that this definition only apply to TEM mode. Thus in solution to TE and TM Mode, The $\beta$ used to show that the media is lossless but it may or may not be complex.
-\par
-$\delta$ is an approximation to power loss due to imperfect conductance ($\sigma<<\infty$).
+Wave number or k is defined as $ k = j \omega \sqrt{\mu \epsilon} $. This definition inspired from Wave Equation in a lossless medium. So for Lossy media it changed to {\it Complex Propagation Constant} or $\gamma$.  The Complex Propagation Constant is splitted into real and imaginary part which the former called attenuation constant or $\alpha$ and the latter is phase constant or $\beta$. note that this definition only apply to TEM mode. Thus in solution to TE and TM Mode, $\beta$ is used to show the media is lossless. So in these mode $\beta$ can be a complex number.
+\setlength{\parindent}{0.0cm}
+\par\noindent
+\begin{itemize}
+\item[--] $\delta$ is an approximation to power loss due to imperfect conductance ($\sigma\ll\infty$).
+\item[--] p is power density aka power through a $1~m^2$ cross section.
+\item[--] Complex permeability used to show delay between B and H in high frequencies
+\end{itemize}
 \par
 \setlength{\parindent}{0.0cm} % Default is 15pt.
