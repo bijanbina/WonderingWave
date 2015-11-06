@@ -66,17 +66,15 @@
 %	Header
 %----------------------------------------------------------------------------------------
 \pagestyle{fancy}
+\fancyhf{}
 \lhead{\color{\hwMaincolor}\thinfont Summary} % Top left header
 \chead{\color{\hwMaincolor}\thinfont \confTitle} % Top center head
 \rhead{\color{\hwMaincolor}\thinfont \Places}% Top right header
 \lfoot{\color{\hwMaincolor}\lastxmark} % Bottom left footer
 \cfoot{} % Bottom center footer
-\rfoot{\color{\hwMaincolor}Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
 \renewcommand\headrulewidth{0.4pt} % Size of the header rule
-\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
 \makeatletter
 \renewcommand\headrule{\color{\hwRulecolor} \if@fancyplain \let \headrulewidth \plainheadrulewidth \fi \hrule \@height \headrulewidth \@width \headwidth \vskip \headrulewidth }
-\renewcommand\footrule{\color{\hwRulecolor} \if@fancyplain \let \footrulewidth \plainfootrulewidth \fi \vskip -\footruleskip \vskip \footrulewidth \hrule \@width \headwidth \@height \footrulewidth \vskip \footruleskip }
 
 \makeatother
 
@@ -215,7 +213,6 @@
 %-----------------------------------------------------%
 %------------------------Fix Frac---------------------%
 %-----------------------------------------------------%
-
 
 
 
