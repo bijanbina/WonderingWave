@@ -7,9 +7,9 @@ $$ \nabla = \frac{\partial}{\partial \rho}\;\hat{\rho} ~+~ \frac{1}{\rho}\frac{\
 $$ \nabla = \frac{\partial}{\partial r}\;\hat{r} ~+~ \frac{1}{r}\frac{\partial}{\partial \theta}\;\hat{\theta} ~+~ \frac{1}{r\,sin\theta}\frac{\partial}{\partial \phi}\;\hat{\phi} $$
 \par
 Divergance:
-$$ \nabla\;.\;E = \frac{\partial E_x}{\partial x}\;\hat{x} ~+~ \frac{\partial E_y}{\partial y}\;\hat{y} ~+~ \frac{\partial E_z}{\partial z}\;\hat{z} $$
-$$ \nabla\;.\;E = \frac{1}{\rho} \frac{\partial}{\partial \rho} (\rho \,E_{\rho}) \hat{\rho} ~+~ \frac{1}{\rho}\frac{\partial}{\partial \phi}\;\hat{\phi} ~+~ \frac{\partial}{\partial z}\;\hat{z} $$
-$$ \nabla\;.\;E = \frac {1}{\,r^2}\frac{\partial}{\partial r} (r^2 \, E_r)\;\hat{r} ~+~ \frac{1}{r\,sin\theta}\frac{\partial}{\partial \theta}(sin\theta\, E_{\theta})\;\hat{\theta} ~+~ \frac{1}{r\,sin\theta}\frac{\partial}{\partial \phi}\;\hat{\phi} $$
+$$ \nabla\,.\,E = \frac{\partial E_x}{\partial x}\;\hat{x} ~+~ \frac{\partial E_y}{\partial y}\;\hat{y} ~+~ \frac{\partial E_z}{\partial z}\;\hat{z} $$
+$$ \nabla\,.\,E = \frac{1}{\rho} \frac{\partial}{\partial \rho} (\rho \,E_{\rho})\;\hat{\rho} ~+~ \frac{1}{\rho}\frac{\partial E_{\phi}}{\partial \phi}\;\hat{\phi} ~+~ \frac{\partial E_{z}}{\partial z}\;\hat{z} $$
+$$ \nabla\,.\,E = \frac {1}{\,r^2}\frac{\partial}{\partial r} (r^2 \, E_r)\;\hat{r} ~+~ \frac{1}{r\,sin\theta}\frac{\partial}{\partial \theta}(sin\theta\, E_{\theta})\;\hat{\theta} ~+~ \frac{1}{r\,sin\theta}\frac{\partial}{\partial \phi}\;\hat{\phi} $$
 \par
 Curl:
 $$ \nabla \times E =  \begin{vmatrix}
@@ -22,7 +22,7 @@ $$ \nabla \times E =  \begin{vmatrix}
 \;\dfrac{\partial}{\partial \rho} & \dfrac{\partial}{\partial \phi} & \dfrac{\partial}{\partial z}\;\;\\[0.8em]
 \;E_{\rho} & \rho\hspace{1pt}E_{\phi} & E_z\;\;
 \end{vmatrix} ~~~~
- \nabla \times E = \frac{1}{r~ sin \theta} \begin{vmatrix}
+ \nabla \times E = \frac{1}{r^2~ sin \theta} \begin{vmatrix}
 \quad\hat{\boldsymbol{r}}\quad\quad & r \, \hat{\boldsymbol{\theta}} & r\, sin \theta \:\hat{\boldsymbol{\phi}}\;\;\\[0.25em]
 \dfrac{\partial}{\partial r} & \dfrac{\partial}{\partial \theta} & \dfrac{\partial}{\partial \phi}\;\;\\[0.8em]
 E_{r} & r E_{\theta} & r \hspace{1pt} sin \theta \, E_{\phi}\;\;

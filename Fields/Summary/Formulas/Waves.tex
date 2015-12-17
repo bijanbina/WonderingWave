@@ -8,10 +8,11 @@ $$Lossless:~ \nabla^2 \vec{E} - k^2 \vec{E} = 0 ~~ , ~~ Lossy ~ : ~ \nabla^2 \ve
 Propagation Modes: 
 $$TEM:~ E_z = H_z = 0 ~~ , ~~ TE:~ E_z = 0 ~~ H_z \neq 0 ~~ , ~~ TM:~ E_z \neq 0 ~~ H_z = 0 $$
 \par
-Attenuations: 
-$$ \alpha = {\alpha}_d + {\alpha}_c ~~ , ~~ {\alpha}_d ~: ~ dielectric~loss ~~ , ~~ {\alpha}_c ~ : ~ conductor~loss  ~~ , ~~ \delta = \sqrt{\frac{2}{\omega \mu \sigma}} $$
 Energy
 $$ \vec{S} = \vec{E} \times  \vec{H}^*~\text{\scriptsize(Poynting~Verctor)} ~~ , ~~ p = \vec{S} \cdot \hat{n} ~~ , ~~ P_{avg} = \frac{1}{2} \text{Re} \int{ \vec{S} \cdot \mathrm{d}\vec{s}}$$
+\par
+Energy in Conductors: 
+$$  \text{P}_{avg} =  \frac{R_s}{2} \int{ | \vec{H} | ^ 2 \cdot \mathrm{d}\vec{s}} ~~ , \text{P}_{avg} =  \frac{R_s}{2} \int{ | \vec{J_s} | ^ 2 \cdot \mathrm{d}\vec{l}} ~~ , ~~ \delta = \sqrt{\frac{2}{\omega \mu \sigma}} $$
 \setlength{\parindent}{0.5cm} % Default is 15pt.
 \vspace{-10pt}\par
 \setlength{\parindent}{0.0cm}
@@ -20,6 +21,7 @@ $$ \vec{S} = \vec{E} \times  \vec{H}^*~\text{\scriptsize(Poynting~Verctor)} ~~ ,
 \item[--] $\delta$ is an approximation to power loss due to imperfect conductance ($\sigma\ll\infty$).
 \item[--] p is power density aka power through a $1~m^2$ cross section.
 \item[--] Complex permeability used to show delay between B and H in high frequencies
+\item[--] $\alpha = {\alpha}_d + {\alpha}_c ~~ , ~~ {\alpha}_d ~: ~ dielectric~loss ~~ , ~~ {\alpha}_c ~ : ~ conductor~loss$
 \end{itemize}
 \par
 \setlength{\parindent}{0.0cm} % Default is 15pt.
