@@ -28,7 +28,7 @@
 \evensidemargin=0in
 \oddsidemargin=-0.375in
 \textwidth=7.25in
-\textheight=9.75in
+\textheight=10.0in
 \headsep=5pt
 
 %Setup section title and margin
@@ -38,12 +38,7 @@
 \setlength{\hwPartWidth}{\textwidth}
 \addtolength{\hwProblemWidth}{-\hwProblemIndent}
 \addtolength{\hwPartWidth}{-5em}
-%Section redifining
-\titleformat{\section}[block]{\bfseries}{\thesection.}{1em}{}
-\titleformat{\subsection}[block]{\bfseries}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}[block]{}{\thesubsubsection}{1em}{}
-\titlespacing*{\subsection} {2em}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-\titlespacing*{\subsubsection} {3em}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
 
 %Colorful Section
 \newcommand{\hsectionstrut}{\rule{0pt}{12.5pt}}
@@ -66,15 +61,17 @@
 %	Header
 %----------------------------------------------------------------------------------------
 \pagestyle{fancy}
-\fancyhf{}
 \lhead{\color{\hwMaincolor}\thinfont Summary} % Top left header
-\chead{\color{\hwMaincolor}\thinfont \confTitle} % Top center head
+\chead{\color{\hwMaincolor}\thinfont Electronic II} % Top center head
 \rhead{\color{\hwMaincolor}\thinfont \Places}% Top right header
 \lfoot{\color{\hwMaincolor}\lastxmark} % Bottom left footer
 \cfoot{} % Bottom center footer
+\rfoot{\color{\hwMaincolor}Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
 \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
 \makeatletter
 \renewcommand\headrule{\color{\hwRulecolor} \if@fancyplain \let \headrulewidth \plainheadrulewidth \fi \hrule \@height \headrulewidth \@width \headwidth \vskip \headrulewidth }
+\renewcommand\footrule{\color{\hwRulecolor} \if@fancyplain \let \footrulewidth \plainfootrulewidth \fi \vskip -\footruleskip \vskip \footrulewidth \hrule \@width \headwidth \@height \footrulewidth \vskip \footruleskip }
 
 \makeatother
 
