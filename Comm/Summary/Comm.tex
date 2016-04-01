@@ -1,0 +1,49 @@
+\documentclass{article}
+\input{Design/packages}
+\input{Design/design}
+\input{Design/element4}
+\input{Design/header}
+\usepackage{amsmath}%
+\usepackage{amssymb}
+\usepackage{lipsum}  
+\usepackage{mathtools}
+\usepackage{mathrsfs,amsmath}   %The amsmath package is included for \xrightarrow
+
+\numberwithin{equation}{section}%equation section
+
+
+\usetikzlibrary{intersections}
+
+\DeclareMathSizes{10}{10}{6}{6}
+\begin{document}
+\pagecolor{mainTheme}\afterpage{\pagecolor{backCirc}}
+\maketitle
+\thispagestyle{empty}
+
+
+\newcommand{\TonDdef}[1]{
+\pdfbookmark[0]{#1}{#1} % need open pdf properly
+}
+
+\newcommand{\TonDpage}[1]{
+  \newpage
+  \renewcommand{\Places}{#1}
+}
+
+
+\newcommand{\myfrac}[3][3pt]{\frac{\raisebox{10pt}{#2}}{\raisebox{-10pt}{#3}}}
+
+\TonDpage{Fourier}
+\TonDdef{1.Fourier} % Teacher/lecturer
+\vspace*{-0.5 em}
+\section{Fourier}
+\input{Pages/fourier}
+\vspace{10pt}
+
+
+\TonDpage{Answered Questions}
+\TonDdef{5.Answered Questions} % Teacher/lecturer
+\section{Answered Questions}
+\input{Pages/faq}
+
+\end{document}
