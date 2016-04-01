@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[     57657,       1169]
-NotebookOptionsPosition[     57256,       1134]
-NotebookOutlinePosition[     57592,       1149]
-CellTagsIndexPosition[     57549,       1146]
+NotebookDataLength[     57469,       1162]
+NotebookOptionsPosition[     57106,       1128]
+NotebookOutlinePosition[     57441,       1143]
+CellTagsIndexPosition[     57398,       1140]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -66,19 +66,13 @@ Cell[BoxData["\<\"animation.gif\"\>"], "Output",
  CellChangeTimes->{3.657450460794285*^9}]
 }, Open  ]],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.657450642047022*^9, 3.6574506734387093`*^9}, 
-   3.657450908003791*^9}],
-
 Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"zLenght", " ", "=", 
-     RowBox[{"15", "\[Pi]"}]}], ";"}], "\[IndentingNewLine]"}]}]], "Input",
+ RowBox[{
+  RowBox[{"zLenght", " ", "=", 
+   RowBox[{"15", "\[Pi]"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.657450906555872*^9, 3.65745091851598*^9}, {
   3.657475896513831*^9, 3.6574759767684917`*^9}, {3.6574767075704117`*^9, 
-  3.657476779495446*^9}}],
+  3.657476779495446*^9}, {3.6606686306528893`*^9, 3.660668632364503*^9}}],
 
 Cell[CellGroupData[{
 
@@ -150,12 +144,12 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 137.6309184761048, Typeset`show$$ = 
+   DynamicModuleBox[{$CellContext`t$$ = 85.20001933288584, Typeset`show$$ = 
     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`t$$], 0, 300}}, Typeset`size$$ = {695.4, {94., 31.}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+      Hold[$CellContext`t$$], 0, 300}}, Typeset`size$$ = {360., {111., 117.}},
+     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`t$86288$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
@@ -184,7 +178,7 @@ Cell[BoxData[
        ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
         "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
         True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{743., {95., 102.}},
+     ImageSizeCache->{407., {146., 153.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1132,8 +1126,8 @@ Cell[BoxData[
   3.657611545814331*^9, {3.6576116612313423`*^9, 3.657611707015826*^9}}]
 }, Open  ]]
 },
-WindowSize->{912, 806},
-WindowMargins->{{225, Automatic}, {Automatic, -72}},
+WindowSize->{1280, 996},
+WindowMargins->{{Automatic, 0}, {Automatic, -27}},
 FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1148,41 +1142,40 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[1464, 33, 736, 22, 55, "Input"],
+Cell[1464, 33, 736, 22, 32, "Input"],
 Cell[CellGroupData[{
 Cell[2225, 59, 172, 3, 32, "Input"],
 Cell[2400, 64, 90, 1, 32, "Output"]
 }, Open  ]],
-Cell[2505, 68, 120, 2, 32, "Input"],
-Cell[2628, 72, 346, 8, 77, "Input"],
+Cell[2505, 68, 317, 6, 32, "Input"],
 Cell[CellGroupData[{
-Cell[2999, 84, 2410, 63, 204, "Input"],
-Cell[5412, 149, 2641, 51, 214, "Output"]
+Cell[2847, 78, 2410, 63, 138, "Input"],
+Cell[5260, 143, 2643, 51, 316, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8090, 205, 684, 19, 32, "Input"],
-Cell[8777, 226, 32626, 544, 237, "Output"]
+Cell[7940, 199, 684, 19, 32, "Input"],
+Cell[8627, 220, 32626, 544, 237, "Output"]
 }, Open  ]],
-Cell[41418, 773, 586, 14, 52, "Input"],
-Cell[42007, 789, 50, 1, 32, "Input"],
+Cell[41268, 767, 586, 14, 52, "Input"],
+Cell[41857, 783, 50, 1, 32, "Input"],
 Cell[CellGroupData[{
-Cell[42082, 794, 369, 6, 32, "Input"],
-Cell[42454, 802, 288, 4, 32, "Output"]
+Cell[41932, 788, 369, 6, 32, "Input"],
+Cell[42304, 796, 288, 4, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[42779, 811, 523, 15, 32, "Input"],
-Cell[43305, 828, 8425, 149, 229, "Output"]
+Cell[42629, 805, 523, 15, 32, "Input"],
+Cell[43155, 822, 8425, 149, 229, "Output"]
 }, Open  ]],
-Cell[51745, 980, 1829, 53, 195, "Input"],
-Cell[53577, 1035, 545, 14, 52, "Input"],
+Cell[51595, 974, 1829, 53, 129, "Input"],
+Cell[53427, 1029, 545, 14, 52, "Input"],
 Cell[CellGroupData[{
-Cell[54147, 1053, 221, 5, 32, "Input"],
-Cell[54371, 1060, 184, 3, 32, "Output"]
+Cell[53997, 1047, 221, 5, 32, "Input"],
+Cell[54221, 1054, 184, 3, 32, "Output"]
 }, Open  ]],
-Cell[54570, 1066, 146, 2, 32, "Input"],
+Cell[54420, 1060, 146, 2, 32, "Input"],
 Cell[CellGroupData[{
-Cell[54741, 1072, 812, 22, 76, "Input"],
-Cell[55556, 1096, 1684, 35, 124, "Output"]
+Cell[54591, 1066, 812, 22, 76, "Input"],
+Cell[55406, 1090, 1684, 35, 124, "Output"]
 }, Open  ]]
 }
 ]
@@ -1190,4 +1183,4 @@ Cell[55556, 1096, 1684, 35, 124, "Output"]
 
 (* End of internal cache information *)
 
-(* NotebookSignature 9uDNTeLxon3fwCgL4iFvfI8o *)
+(* NotebookSignature 4xDRf1JxEKWs5B1D@I9VeJlM *)
