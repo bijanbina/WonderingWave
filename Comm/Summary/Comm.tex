@@ -3,18 +3,12 @@
 \input{Design/design}
 \input{Design/element4}
 \input{Design/header}
-\usepackage{amsmath}%
-\usepackage{amssymb}
-\usepackage{lipsum}  
-\usepackage{mathtools}
-\usepackage{mathrsfs,amsmath}   %The amsmath package is included for \xrightarrow
 
+\setcounter{section}{0}
 \numberwithin{equation}{section}%equation section
-
-
 \usetikzlibrary{intersections}
 
-\DeclareMathSizes{10}{10}{6}{6}
+%\DeclareMathSizes{10}{10}{6}{6}
 \begin{document}
 \pagecolor{mainTheme}\afterpage{\pagecolor{backCirc}}
 \maketitle
@@ -30,8 +24,6 @@
   \renewcommand{\Places}{#1}
 }
 
-
-\newcommand{\myfrac}[3][3pt]{\frac{\raisebox{10pt}{#2}}{\raisebox{-10pt}{#3}}}
 
 \TonDpage{Fourier}
 \TonDdef{1.Fourier} % Teacher/lecturer
