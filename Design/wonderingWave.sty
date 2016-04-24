@@ -62,7 +62,7 @@
 %----------------------------------------------------------------------------------------
 \pagestyle{fancy}
 \lhead{\color{\hwMaincolor}\thinfont Summary} % Top left header
-\chead{\color{\hwMaincolor}\thinfont Communication Systems} % Top center head
+\chead{\color{\hwMaincolor}\thinfont \hwPageHeader} % Top center head
 \rhead{\color{\hwMaincolor}\thinfont \Places}% Top right header
 \lfoot{\color{\hwMaincolor}\lastxmark} % Bottom left footer
 \cfoot{} % Bottom center footer
@@ -208,5 +208,20 @@
 \makeatother
 
 %-----------------------------------------------------%
-%------------------------Fix Frac---------------------%
+%----------------------My Commands--------------------%
 %-----------------------------------------------------%
+\newcommand{\bijooImage}[3][0.8]{
+\begin{minipage}{\linewidth}
+\includegraphics[width=#1\columnwidth]{Resources/#2}
+\centering
+\captionof{figure}{#3}
+\end{minipage}~\\
+}
+
+\newcommand{\bijooDImage}[3][0.8]{
+\begin{minipage}{#1\linewidth}
+\includegraphics[width=0.8\columnwidth]{Resources/#2.jpg}
+\captionsetup{width=0.8\textwidth}
+\centering
+\captionof{figure}{#3}
+\end{minipage}
