@@ -1,10 +1,7 @@
 %This file contains frequently asked questions
-\textbf{Q:} Why beta can be imaginary?\\
-\textbf{A:} Wave number or k is defined as $ k = j \omega \sqrt{\mu \epsilon} $. This definition inspired from Wave Equation in a lossless medium. So for Lossy media it changed to {\it Complex Propagation Constant} or $\gamma$.  The Complex Propagation Constant is splitted into real and imaginary part which the former called attenuation constant or $\alpha$ and the latter is phase constant or $\beta$. note that this definition only apply to TEM mode. Thus in solution to TE and TM Mode, $\beta$ is used to show the media is lossless. So in these mode $\beta$ can be a complex number.
-\\\\\textbf{Q:} Find Surface current if $z$ is the propagation direction\\
-\textbf{A:} 
-$$ J_s =  \int_{0}^{\infty}{ J } \cdot \mathrm{d}\vec{z} = \int_{0}^{\infty}{\sigma E} \cdot \mathrm{d}\vec{z} = \sigma \int_{0}^{\infty}{E_0 e^{-\gamma z}} \cdot \mathrm{d}\vec{z} $$
-\\\\\textbf{Q:} What is group velocity?\\
+\textbf{Q:} What is power spectrum density (PSD) and what is it's relation with signal spectrum?\\
+\textbf{A:} PSD is the same as fourier transform of signal. This is not simply to shown but known as wiener-khinchin theorem which states that fourier transform of auto-correlation function is an indirect way to calculate spectrum density of a signal. In a deterministic signals this method is vain but in a probabilistic signal this is a valuable method as the direct method can't be used\\
+\\\textbf{Q:} What is group velocity?\\
 \textbf{A:} Phase velocity which is calculate from\\
 $$ v = \frac{\omega}{\beta} $$
 is the speed of single frequency propagate down to space. In many cases transmission signal is consists of more than a single frequency which is the velocity for each single wave is slightly different due to phase velocity frequency dependent nature. In this case we define group velocity, the speed which the wave packet ( overall shape of the waves ) propagate, please understand that group velocity is just an approximated value to the wave packet speed. and it's only valid for $\Delta \omega \ll \omega_{0}$.\\
