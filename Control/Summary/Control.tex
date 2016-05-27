@@ -1,11 +1,5 @@
 \documentclass{article}
-\input{Design/packages}
 \input{Design/header}
-\usepackage{/home/bijan/Project/WonderingWave/Design/element4}
-\usepackage{/home/bijan/Project/WonderingWave/Design/wonderingWave}
-\usepackage{amsmath}%
-\usepackage{amssymb}
-\usepackage{lipsum}  
 \usetikzlibrary{intersections}
 
 \DeclareMathSizes{10}{10}{8}{6}
@@ -14,10 +8,6 @@
 \maketitle
 \thispagestyle{empty}
 
-
-\newcommand{\TonDdef}[1]{
-\pdfbookmark[0]{#1}{#1} % need open pdf properly
-}
 
 \newcommand{\TonDpage}[1]{
   \newpage
@@ -28,7 +18,6 @@
 \newcommand{\myfrac}[3][3pt]{\frac{\raisebox{10pt}{#2}}{\raisebox{-10pt}{#3}}}
 
 \TonDpage{State Space}
-\TonDdef{1.State Sgpace} % Teacher/lecturer
 \vspace*{-0.5 em}
 \section{State Space}
 \input{Pages/state-space}
@@ -38,13 +27,11 @@
 \input{Pages/time-response}
 \vspace{10pt}
 
-\section{Stability}
+\TonDpage{State Space}
+\section{State Space}
 \input{Pages/stability}
 \vspace{10pt}
 
-
-\TonDpage{Answered Questions}
-\TonDdef{5.Answered Questions} % Teacher/lecturer
 \section{Answered Questions}
 \input{Pages/faq}
 

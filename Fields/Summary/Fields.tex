@@ -1,52 +1,45 @@
 \documentclass{article}
 \input{Design/packages}
 \input{Design/header}
-\usepackage{/home/bijan/Project/WonderingWave/Design/element4}
-\usepackage{/home/bijan/Project/WonderingWave/Design/wonderingWave}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{lipsum}  
-\usetikzlibrary{intersections}
 
-\DeclareMathSizes{10}{10}{6}{6}
 \begin{document}
+
 \pagecolor{mainTheme}\afterpage{\pagecolor{backCirc}}
 \maketitle
 \thispagestyle{empty}
 
 
-\newcommand{\TonDdef}[1]{
-\pdfbookmark[0]{#1}{#1} % need open pdf properly
-}
-
-\newcommand{\TonDpage}[1]{
-  \newpage
-  \renewcommand{\Places}{#1}
-}
-
-
-\newcommand{\myfrac}[3][3pt]{\frac{\raisebox{10pt}{#2}}{\raisebox{-10pt}{#3}}}
-
 \TonDpage{Wave Equations}
-\TonDdef{1.Wave Equations} % Teacher/lecturer
+\TonDdef{1.Wave Equations}
 \section{Wave Equations}
 \input{Formulas/Waves}
+
 \vspace{10pt}
-\TonDdef{2.Propagation In Medias} % Teacher/lecturer
+\TonDdef{2.Propagation In Medias}
 \section{Propagation In Medias}
 \input{Formulas/Propagation}
 
-\TonDdef{3.Transmission Lines} % Teacher/lecturer
+\TonDdef{3.Transmission Lines}
 \section{Transmission Lines}
 \input{Formulas/TransmissionLine}
 
-\TonDdef{4.Mathemthical Formulas} % Teacher/lecturer
-\section{Mathemthical Formulas}
+\TonDdef{4.Mathematical Formulas}
+\section{Mathematical Formulas}
 \input{Formulas/Mathematics}
 
+\vspace{10pt}
+\TonDdef{5.Antenna}
+\section{Antenna}
+\input{Pages/Antenna.tex}
+
+\vspace{10pt}
+\TonDdef{6.EMC}
+\section{EMC}
+\setcounter{subsection}{0}
+\input{Pages/EMC.tex}
 
 \TonDpage{Answered Questions}
-\TonDdef{5.Answered Questions} % Teacher/lecturer
+\TonDdef{7.Answered Questions}
 \section{Answered Questions}
 \input{Pages/faq}
 

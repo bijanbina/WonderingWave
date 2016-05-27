@@ -2,3 +2,21 @@
 \newcommand{\hwPageHeader}{Fields \& Waves}
 \newlength{\TitleSpace} \setlength{\TitleSpace}{3.5in}
 \definecolor{mainTheme}{HTML}{45A6A5}
+\usepackage{/home/bijan/Project/WonderingWave/Design/element4}
+\usepackage{/home/bijan/Project/WonderingWave/Design/wonderingWave}
+
+
+\usetikzlibrary{intersections}
+\DeclareMathSizes{10}{10}{6}{6}
+
+
+\newcommand{\TonDdef}[1]{
+\pdfbookmark[0]{#1}{#1} % need open pdf properly
+}
+
+\newcommand{\TonDpage}[1]{
+  \newpage
+  \renewcommand{\Places}{#1}
+}
+
+\newcommand{\myfrac}[3][3pt]{\frac{\raisebox{10pt}{#2}}{\raisebox{-10pt}{#3}}}

@@ -15,9 +15,6 @@
 \thispagestyle{empty}
 
 
-\newcommand{\TonDdef}[1]{
-\pdfbookmark[0]{#1}{#1} % need open pdf properly
-}
 
 \newcommand{\TonDpage}[1]{
   \newpage
@@ -26,7 +23,6 @@
 
 
 \TonDpage{Fourier}
-\TonDdef{1.Fourier} % Teacher/lecturer
 \vspace*{-0.5 em}
 \section{Fourier}
 \input{Pages/fourier}
@@ -34,7 +30,6 @@
 
 
 \setcounter{subsection}{0}
-\TonDdef{2.Communication Channel} % Teacher/lecturer
 \vspace*{-0.5 em}
 \section{Communication Channel}
 \input{Pages/channel}
@@ -42,21 +37,20 @@
 
 
 \setcounter{subsection}{0}
-\TonDdef{3.Statistics} % Teacher/lecturer
 \vspace*{-0.5 em}
 \section{Statistics}
 \input{Pages/statistics}
 \vspace{10pt}
 
 
-\TonDdef{5.Answered Questions} % Teacher/lecturer
 \section{Answered Questions}
 \input{Pages/faq}
 
-~\\\renewcommand{\Places}{Refrences}
+~\\%\renewcommand{\Places}{Refrences}
 \section{Refrences}\vspace{0.5em}
-\TonDdef{6.Refrences} % Teacher/lecturer
 \input{Pages/bibliography}
-
+\printbibliography[heading=offline,filter=offline]
+\addcontentsline{toc}{section}{\bibname}
+\printbibliography[heading=online,filter=online]
 
 \end{document}

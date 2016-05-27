@@ -1,10 +1,24 @@
-\newcommand{\confTitle}{Control} % Assignment title
-\newcommand{\hmwkDueDate}{Wondering Waves} % Due date
-\newcommand{\Places}{Bijan Binaee} % Teacher/lecturer
-\newcommand{\confCompany}{Summary} % Your name
+\usepackage{/home/bijan/Project/WonderingWave/Design/packages}
+\usepackage{/home/bijan/Project/WonderingWave/Design/element4}
+\usepackage{/home/bijan/Project/WonderingWave/Design/wonderingWave}
+
+
+\newcommand{\confTitle}{Control}
 \newcommand{\hwPageHeader}{Control} % Your name
-\newlength{\TitleSpace}
-\setlength{\TitleSpace}{3.5in}
+\newlength{\TitleSpace} \setlength{\TitleSpace}{3.5in}
+\definecolor{mainTheme}{HTML}{EF7E36}
 
-\definecolor{mainTheme}{HTML}{EF7E36} %Tahiti Color
+\usetikzlibrary{intersections}
+\DeclareMathSizes{10}{10}{6}{6}
 
+
+\newcommand{\TonDdef}[1]{
+\pdfbookmark[0]{#1}{#1} % need open pdf properly
+}
+
+\newcommand{\TonDpage}[1]{
+  \newpage
+  \renewcommand{\Places}{#1}
+}
+
+\newcommand{\myfrac}[3][3pt]{\frac{\raisebox{10pt}{#2}}{\raisebox{-10pt}{#3}}}
