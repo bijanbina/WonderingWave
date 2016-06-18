@@ -66,9 +66,9 @@
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
-
+\newlength{\TitleSpaceUp} \setlength{\TitleSpaceUp}{3.5in}
 \title{
-\vspace{3.5in}
+\vspace{\TitleSpaceUp}
 \textcolor{white}{\textmd{\fontsize{40}{40}\fontspec{Asap}\textbf{\confTitle}}\\
 \vspace{\TitleSpace}
 \small{\hmwkDueDate}\\
@@ -88,7 +88,7 @@
 \rhead{\color{\hwMaincolor}\thinfont \Places}% Top right header
 \lfoot{\color{\hwMaincolor}\lastxmark} % Bottom left footer
 \cfoot{} % Bottom center footer
-\rfoot{\color{\hwMaincolor}Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\rfoot{\color{\hwMaincolor}\thinfont Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
 \renewcommand\headrulewidth{0.4pt} % Size of the header rule
 \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
 \makeatletter
@@ -247,3 +247,4 @@
 \centering
 \captionof{figure}{#3}
 \end{minipage}
+}

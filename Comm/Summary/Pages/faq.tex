@@ -1,14 +1,8 @@
 %This file contains frequently asked questions
 \textbf{Q:} What is power spectrum density (PSD) and what is it's relation with signal spectrum?\\
-\textbf{A:} PSD is the same as fourier transform of signal. This is not simply to shown but known as wiener-khinchin theorem which states that fourier transform of auto-correlation function is an indirect way to calculate spectrum density of a signal. In a deterministic signals this method is vain but in a probabilistic signal this is a valuable method as the direct method can't be used\\
+\textbf{A:} PSD is the same as fourier transform of signal. This is not simply to shown but known as wiener-khinchin theorem which states that fourier transform of auto-correlation function is an indirect way to calculate spectrum density of a signal probabilistic. In a deterministic signals this method is vain but in a probabilistic signal this is a valuable method as the direct method can't be used.\\
 \\\textbf{Q:} What is Transducer,Transponder, Tranciever?\\
 \textbf{A:} transducer is a system, converts the electrical signal to its original from the message. Transponder on the other hand is a device to send message. and Tranciever is a transponder which can also used as a reciever\\
 \\\textbf{Q:} Why we put inductance and capacitance into transmission line?\\
 \textbf{A:} We put them because they exist in the line. They are exist in all frequencies but they have become considerable only in high frequencies so we have to calculate each wire inductance and the coupling factor between lines. If we deal with distributed circuits two phenomenon occurred at the same time, propagation delay and transmission line intrinsic Impedance. note that these two events are developed independently of each other to model individual wave propagation aspect.
 For a mid range high frequency the PCB tracks are only exhibit as a pure resistance aka lossless line but if the frequency move toward microwave frequencies, skin-depth effect, in the practical design must take into accounts
-\\\\\textbf{Q:} What is $Z_{in}$ and what is it difference with $Z_o$\\
-\textbf{A:} $Z_{in}$ only defined where the line is in the steady-state. on the other hand $Z_o$ exist every where on the transmission line. It relates $V^+$ to $I^+$ independently of the load and generator. $Z_o$ employed in calculating $V^+$ when a step pulse applied to the transmission line with\\
-$$ V^+ = \frac{Z_o}{Z_o + Z_g} V_g $$
-where $Z_g$ is generator output resistance
-on the other hand $Z_in$ relates the $V(z)$ to $I(z)$ in any point on the transmission line but only for the steady state\\
-$$ Z_{in} = \frac{V_s}{I_s} $$
