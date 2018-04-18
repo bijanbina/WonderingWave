@@ -30,13 +30,22 @@ E_{r} & r E_{\theta} & r \hspace{1pt} sin \theta \, E_{\phi}\;\;
 Vector Identities:
 $$ \nabla \,.\, ( \vec{A} +  \vec{B} ) = \nabla \,.\, \vec{A} +  \nabla \,.\,  \vec{B}  ~~ , ~~\nabla \times ( \vec{A} +  \vec{B} ) \neq \nabla \times \vec{A} +  \nabla \times  \vec{B} $$
 ~\par
-\begin{minipage}[b]{.49\textwidth}
-\lipsum[1]
+\subsection{Index Notation}
+\begin{minipage}[t]{.49\textwidth}
+index notation is a notation found in general relativity as a way to express higher order matrix and dimensions in a convenient way. We start off topic by explaining Einstein summation convention. As an example consider two vector $\vec{A}$ and $\vec{B}$. In the the conventional notation the scalar product will be written as
+$$ \vec{A} \cdot \vec{B} = \sum_{i=i}^3 A_i B_i $$
+where 
+$$ \vec{A} = ( A_1, A_2, A_3 ) $$
+$$ \vec{B} = ( B_1, B_2, B_3 ) $$
 \end{minipage}%
 \hspace{.02\textwidth}
-\begin{minipage}[b]{.49\textwidth}
+\begin{minipage}[t]{.49\textwidth}
 %\raggedleft
-\lipsum[1]
+In contrary the summation mark is dropped and scalar product write as
+$$ \vec{A} \cdot \vec{B} = A_i B_i $$
+In other word if in a product, two subscript in index notation is the same it will interpret as follow
+$$ A_i B_i = \sum_{i=i}^n A_i B_i $$
+As the summation mark is excess so for the sake of simplicity we could easily drop it without any change in equation. not that it applies to the all cases and equation that have repeated subscript. So if you intend not to have summation you have to use different subscript for each symbol.
 %\makesectionhead{Mosfet}{Common source}
 \end{minipage}%
 \par
